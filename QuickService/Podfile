@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+target 'QuickService' do
+	pod 'AFNetworking'
+	pod 'SnapKit'
+	pod 'SVProgressHUD'
+	pod 'Alamofire', '~> 3.0.0-beta.3'
+end
+
+target 'QuickServiceTests' do
+
+end
+
+target 'QuickServiceUITests' do
+
+end
+

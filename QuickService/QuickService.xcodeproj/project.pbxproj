@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04AFD95AA5A517C006134FE2 /* Pods_QuickService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5D089D0FAE09FD260225EF /* Pods_QuickService.framework */; };
 		877FB9211BC74F48000A79BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877FB9201BC74F48000A79BD /* AppDelegate.swift */; };
 		877FB9231BC74F48000A79BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877FB9221BC74F48000A79BD /* ViewController.swift */; };
 		877FB9261BC74F48000A79BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877FB9241BC74F48000A79BD /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		368FF0F764695A09B492CD77 /* Pods-QuickService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickService.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickService/Pods-QuickService.release.xcconfig"; sourceTree = "<group>"; };
 		877FB91D1BC74F48000A79BD /* QuickService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		877FB9201BC74F48000A79BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		877FB9221BC74F48000A79BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,8 @@
 		877FB9611BC75268000A79BD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		877FB9651BC753EC000A79BD /* UserConfigureFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfigureFile.swift; sourceTree = "<group>"; };
 		877FB96B1BC7A84B000A79BD /* MainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		C13A7D827EC4547C9D4ACDF0 /* Pods-QuickService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickService/Pods-QuickService.debug.xcconfig"; sourceTree = "<group>"; };
+		CF5D089D0FAE09FD260225EF /* Pods_QuickService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AFD95AA5A517C006134FE2 /* Pods_QuickService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		591D25964462C661B07FF665 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF5D089D0FAE09FD260225EF /* Pods_QuickService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		877FB9141BC74F48000A79BD = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +126,8 @@
 				877FB9371BC74F48000A79BD /* QuickServiceTests */,
 				877FB9421BC74F48000A79BD /* QuickServiceUITests */,
 				877FB91E1BC74F48000A79BD /* Products */,
+				AE02D40F49F69C3300BD926A /* Pods */,
+				591D25964462C661B07FF665 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +194,15 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		AE02D40F49F69C3300BD926A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C13A7D827EC4547C9D4ACDF0 /* Pods-QuickService.debug.xcconfig */,
+				368FF0F764695A09B492CD77 /* Pods-QuickService.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 877FB9481BC74F48000A79BD /* Build configuration list for PBXNativeTarget "QuickService" */;
 			buildPhases = (
+				23E246F0D9F25DC12873AB3B /* Check Pods Manifest.lock */,
 				877FB9191BC74F48000A79BD /* Sources */,
 				877FB91A1BC74F48000A79BD /* Frameworks */,
 				877FB91B1BC74F48000A79BD /* Resources */,
+				80E2C36A2AD08113A5BFB67B /* Embed Pods Frameworks */,
+				251BAE686CC53FCA41E2EF1F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,6 +333,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23E246F0D9F25DC12873AB3B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		251BAE686CC53FCA41E2EF1F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickService/Pods-QuickService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80E2C36A2AD08113A5BFB67B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickService/Pods-QuickService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		877FB9191BC74F48000A79BD /* Sources */ = {
@@ -470,6 +545,7 @@
 		};
 		877FB9491BC74F48000A79BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C13A7D827EC4547C9D4ACDF0 /* Pods-QuickService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuickService/Info.plist;
@@ -481,6 +557,7 @@
 		};
 		877FB94A1BC74F48000A79BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368FF0F764695A09B492CD77 /* Pods-QuickService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QuickService/Info.plist;

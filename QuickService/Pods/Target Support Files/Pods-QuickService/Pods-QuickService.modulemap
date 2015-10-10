@@ -1,0 +1,6 @@
+framework module Pods_QuickService {
+  umbrella header "Pods-QuickService-umbrella.h"
+
+  export *
+  module * { export * }
+}
